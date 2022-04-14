@@ -1,0 +1,40 @@
+@mixin burgerBtn {
+    position: absolute;
+    right: 0;
+    height: 3px;
+    content: '';
+    background-color: $my-white;
+    transition: width .3s;
+}
+
+@mixin heroImg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@mixin shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+@mixin hlStyle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin contactForm {
+    margin-bottom: 2em;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
