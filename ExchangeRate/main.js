@@ -88,15 +88,23 @@ const count = () => {
     const base = `?base=${selectTop.value}`
     const symbols = `&symbols=${selectBottom.value}`
 
-    fetch(URL+base+symbols)
-    .then(res => res.json())
-    .then(data => {
-        const rate = data.rates[selectBottom.value]
-        rateInfo.textContent = `1${selectTop.value} = ${rate.toFixed(6)}${selectBottom.value}`
-        inputBottom.value = (inputTop.value * rate).toFixed(2)
-    })
-    .catch(err => alert('fatal ERROR of API!!!'))
-}
+    if (inputTop.value < 1) {
+        rateInfo.textContent = 'Input value can not be < 1'
+        rateInfo.style.color = 'tomato'    
+    } else {
+        fetch(URL+base+symbols)
+        .then(res => res.json())
+        .then(data => {
+            const rate = data.rates[selectBottom.value]
+            rateInfo.textContent = `1${selectTop.value} = ${rate.toFixed(6)}${selectBottom.value}`
+            inputBottom.value = (inputTop.value * rate).toFixed(2)
+            rateInfo.style.color = 'black'
+        })
+        .catch(err => alert('fatal ERROR of API!!!'))
+    }
+    }
+
+
 
 const swap = () => {
     const catchCurrency = selectTop.value
