@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="top">
+            <button class="top__btn top__btn--first superBtn">let colour!</button>
+            <button class="top__btn top___btn--second superBtn">reset colours</button>
+            <h2 class="top__heading">Check current weather</h2>
+            <div class="top__shadow"></div>
+        </div>
+
+        <div class="bottom">
+
+            <div class="bottom-query">
+                <div class="bottom-query__container">
+                    <input class="bottom-query__input" type="text" placeholder="Type city name...">
+                    <button class="bottom-query__button superBtn">Check it!</button>
+                </div>
+                <p class="bottom-query__error"></p>
+            </div>
+
+            
+            <div class="bottom-answer">
+                
+                <h3 class="bottom-answer__heading"> <span class="bottom-answer__heading--city">City Name &</span> <span class="bottom-answer__heading--date">Current Date</span> </h3> 
+
+                <div class="bottom-answer__container">
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Main:</p>
+                        <p class="bottom-answer__p--bottom data-main">?</p>
+                    </div>
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Temperature:</p>
+                        <p class="bottom-answer__p--bottom data-temp">?</p>
+                    </div>
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Feels like:</p>
+                        <p class="bottom-answer__p--bottom data-feels">?</p>
+                    </div>
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Pressure:</p>
+                        <p class="bottom-answer__p--bottom data-press">?</p>
+                    </div>
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Humidity:</p>
+                        <p class="bottom-answer__p--bottom data-hum">?</p>
+                    </div>
+                    <div class="bottom-answer__box">
+                        <p class="bottom-answer__p--top">Wind speed:</p>
+                        <p class="bottom-answer__p--bottom data-wind">?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<script src="./main.js"></script>
+</body>
+</html>

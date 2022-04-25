@@ -91,6 +91,7 @@ const count = () => {
     if (inputTop.value < 1) {
         rateInfo.textContent = 'Input value can not be < 1'
         rateInfo.style.color = 'tomato'    
+        inputBottom.value = 0
     } else {
         fetch(URL+base+symbols)
         .then(res => res.json())
