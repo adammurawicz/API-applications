@@ -210,6 +210,10 @@ body {
     color: var(--second);
 }
 
+.bottom-answer__p--top {
+    padding-bottom: 0.2em;
+}
+
 @media screen and (min-width: 768px) {
     .bottom {
         height: 400px;
@@ -229,6 +233,10 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+
+    .bottom {
+        height: 450px;
+    }
 
     .bottom-query__input {
         padding: 0.6em 8em;
@@ -268,5 +276,9 @@ body {
         justify-content: space-around;
         align-items: center;
         font-size: 1.5rem;
+    }
+
+    .bottom-answer__p--top {
+        padding-bottom: 0.5em;
     }
 }
