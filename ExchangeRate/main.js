@@ -58,7 +58,7 @@ const getBackgroundImage = () => {
 
 const getBasic = () => {
     root.style.setProperty('--dark', '#262626')
-    root.style.setProperty('--light', '#262626')
+    root.style.setProperty('--light', '#8C8579')
     root.style.setProperty('--bgc', '#F2F2F2')
     for (p of styleP) {
         p.style.color = '#262626'
